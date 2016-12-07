@@ -1,29 +1,23 @@
 import { NgModule }           from '@angular/core';
 import { BrowserModule }      from '@angular/platform-browser';
 
-import { AppRoutingModule }   from './app-routing.module';
-
 import { AppComponent }       from './app.component';
 
-import { HighlightDirective } from './highlight.directive';
-import { TitleComponent }     from './title.component';
-import { UserService }        from './user.service';
-
 import { ContactModule }      from './contact/contact.module';
+import { CoreModule }         from './core/core.module';
 
+import { AppRoutingModule }   from './app-routing.module';
 
 @NgModule({
   imports:      [
     BrowserModule,
     ContactModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule.forRoot({userName: 'Miss Marple'})
   ],
   declarations: [
-    AppComponent,
-    HighlightDirective,
-    TitleComponent
+    AppComponent
   ],
-  providers:    [ UserService ],
   bootstrap:    [ AppComponent ],
 })
 

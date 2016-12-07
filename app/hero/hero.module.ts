@@ -6,7 +6,6 @@ import { HeroRoutingModule }   from './hero-routing.module';
 import { HeroComponent }       from './hero.component';
 import { HeroListComponent }   from './hero-list.component';
 import { HeroDetailComponent }   from './hero-detail.component';
-import { HighlightDirective }   from './highlight.directive';
 
 @NgModule({
   imports: [
@@ -17,8 +16,7 @@ import { HighlightDirective }   from './highlight.directive';
   declarations: [
     HeroComponent,
     HeroListComponent,
-    HeroDetailComponent,
-    HighlightDirective
+    HeroDetailComponent
   ]
 })
 
